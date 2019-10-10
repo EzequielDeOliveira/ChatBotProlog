@@ -1,23 +1,24 @@
 from pokedata import data
 
-pokemons = data["pokemon"][0:2]
+pokemons = data["pokemon"]
+f = open('pokelist.pl','a')
 
 for pokemon in pokemons:
-    print(f'% {pokemon["name"]}')
-    print(f'pokemon({pokemon["name"]})')
-    print()
+    print(f'% {pokemon["name"]}',file=f)
+    print(f'pokemon(\'{pokemon["name"]}\')',file=f)
+    f.write('\n')
     for poke_type in pokemon["type"]:
-        print(f'type({pokemon["name"]}, {poke_type})')
-    print()
-    print(f'height({pokemon["name"]}, {pokemon["height"][0:-2]})')
-    print(f'weight({pokemon["name"]}, {pokemon["weight"][0:-3]})')
-    print()
+        print(f'type(\'{pokemon["name"]}\', \'{poke_type}\')',file=f)
+    f.write('\n')
+    print(f'height(\'{pokemon["name"]}\', {pokemon["height"][0:-2]})',file=f)
+    print(f'weight(\'{pokemon["name"]}\', {pokemon["weight"][0:-3]})',file=f)
+    f.write('\n')
 
     try:
         if "prev_evolution" in pokemon:
             for prev_evolution in pokemon["prev_evolution"]:
                 print(
-                    f'prev_evolution({pokemon["name"]}, {prev_evolution["name"]})')
+                    f'prev_evolution(\'{pokemon["name"]}\', \'{prev_evolution["name"]}\')',file=f)
         else:
             pass
     except:
@@ -27,13 +28,15 @@ for pokemon in pokemons:
         if "next_evolution" in pokemon:
             for next_evolution in pokemon["next_evolution"]:
                 print(
-                    f'next_evolution({pokemon["name"]}, {next_evolution["name"]})')
+                    f'next_evolution(\'{pokemon["name"]}\', \'{next_evolution["name"]}\')',file=f)
         else:
             pass
     except:
         pass
 
-    print()
+    f.write('\n')
 
-    print(f'image({pokemon["name"]}, {pokemon["img"]})')
-    print()
+    print(f'image(\'{pokemon["name"]}\', {pokemon["img"]})',file=f)
+    f.write('\n')
+
+f.close()
