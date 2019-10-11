@@ -16,7 +16,7 @@ prevEvolutionList = []
 imagelist = []
 
 for pokemon in pokemons:
-    pokelist.append(f'pokemon(\'{nameFormat(pokemon["name"])}\', {pokemon["num"]}).')
+    pokelist.append(f'pokemon(\'{nameFormat(pokemon["name"])}\', \'{pokemon["num"]}\').')
     
     for poke_type in pokemon["type"]:
         typelist.append(f'type(\'{nameFormat(pokemon["name"])}\', \'{nameFormat(poke_type)}\').')

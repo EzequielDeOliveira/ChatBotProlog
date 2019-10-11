@@ -1,3 +1,5 @@
+:-[pokelist].
+
 eliza :-
     write('? '), read_word_list(Input), eliza(Input), !.
 
@@ -18,19 +20,23 @@ match([Word | Pattern], Dictionary, [Word | Target]) :-
     atom(Word), match(Pattern, Dictionary, Target).
 match([], _Dictionary, []).
 
-pattern([i,am,1],[how,long,have,you,been,1,'?']).
-pattern([1,you,2,me],[what,makes,you,think,i,2,you,'?']).
-pattern([i,like,1],[does,anyone,else,in,your,family,like,1,'?']).
-pattern([i,feel,1],[do,you,often,feel,that,way,'?']).
-pattern([1,X,2],[can,you,tell,me,more,about,your,X,'?']) :- important(X).
+
+tipos(X,Y) :- type(X,Y),tipos(X,Y).  
+
+%pattern([1,you,2,me],[what,makes,you,think,i,2,you,'?']).
+
+% Padrões do nome e número do pokemon
+pattern([X,is,1,pokemon,'?'],[yes,X,is,a,pokemon,Y]) :- pokemon(X,Y).
+
+% Padrões do tipo do pokemon
+pattern([what,X,type],[X,type,is,Elem]) :- bagof(Y,type(X,Y),Bag),length(Bag, 1),nth0(0,Bag,Elem).
+
+
+pattern([what,X,type],[X,type,is,Elem,and,Elem2]) :- bagof(Y,type(X,Y),Bag),nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
 pattern([1],[please,go,on]).
 
-important(father).
-important(mother).
-important(son).
-important(sister).
-important(brother).
-important(daughter).
+
 
 reply([Head | Tail]) :-
     write(Head), write(' '), reply(Tail).
