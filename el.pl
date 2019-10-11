@@ -34,6 +34,11 @@ pattern([what,X,type],[X,type,is,Elem]) :- bagof(Y,type(X,Y),Bag),length(Bag, 1)
 
 pattern([what,X,type],[X,type,is,Elem,and,Elem2]) :- bagof(Y,type(X,Y),Bag),nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
 
+% Padrões Pokemon - Geral
+
+pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), next_evolution(X, E), prev_evolution(X, P).
+
 pattern([1],[please,go,on]).
 
 
