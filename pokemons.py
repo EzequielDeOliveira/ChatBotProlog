@@ -16,13 +16,13 @@ prevEvolutionList = []
 imagelist = []
 
 for pokemon in pokemons:
-    pokelist.append(f'pokemon(\'{nameFormat(pokemon["name"])}\', {pokemon["num"]}).')
+    pokelist.append(f'pokemon(\'{nameFormat(pokemon["name"])}\', \'{pokemon["num"]}\').')
     
     for poke_type in pokemon["type"]:
         typelist.append(f'type(\'{nameFormat(pokemon["name"])}\', \'{nameFormat(poke_type)}\').')
     
-    heightlist.append(f'height(\'{nameFormat(pokemon["name"])}\', {pokemon["height"][0:-2]}).')
-    weightlist.append(f'weight(\'{nameFormat(pokemon["name"])}\', {pokemon["weight"][0:-3]}).')
+    heightlist.append(f'height(\'{nameFormat(pokemon["name"])}\', \'{pokemon["height"][0:-2] } m\').')
+    weightlist.append(f'weight(\'{nameFormat(pokemon["name"])}\', \'{pokemon["weight"][0:-3] } kg\').')
     
 
     try:

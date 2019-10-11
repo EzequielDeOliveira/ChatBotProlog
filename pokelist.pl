@@ -1,154 +1,154 @@
-pokemon('bulbasaur', 001).
-pokemon('ivysaur', 002).
-pokemon('venusaur', 003).
-pokemon('charmander', 004).
-pokemon('charmeleon', 005).
-pokemon('charizard', 006).
-pokemon('squirtle', 007).
-pokemon('wartortle', 008).
-pokemon('blastoise', 009).
-pokemon('caterpie', 010).
-pokemon('metapod', 011).
-pokemon('butterfree', 012).
-pokemon('weedle', 013).
-pokemon('kakuna', 014).
-pokemon('beedrill', 015).
-pokemon('pidgey', 016).
-pokemon('pidgeotto', 017).
-pokemon('pidgeot', 018).
-pokemon('rattata', 019).
-pokemon('raticate', 020).
-pokemon('spearow', 021).
-pokemon('fearow', 022).
-pokemon('ekans', 023).
-pokemon('arbok', 024).
-pokemon('pikachu', 025).
-pokemon('raichu', 026).
-pokemon('sandshrew', 027).
-pokemon('sandslash', 028).
-pokemon('nidoran(female)', 029).
-pokemon('nidorina', 030).
-pokemon('nidoqueen', 031).
-pokemon('nidoran(male)', 032).
-pokemon('nidorino', 033).
-pokemon('nidoking', 034).
-pokemon('clefairy', 035).
-pokemon('clefable', 036).
-pokemon('vulpix', 037).
-pokemon('ninetales', 038).
-pokemon('jigglypuff', 039).
-pokemon('wigglytuff', 040).
-pokemon('zubat', 041).
-pokemon('golbat', 042).
-pokemon('oddish', 043).
-pokemon('gloom', 044).
-pokemon('vileplume', 045).
-pokemon('paras', 046).
-pokemon('parasect', 047).
-pokemon('venonat', 048).
-pokemon('venomoth', 049).
-pokemon('diglett', 050).
-pokemon('dugtrio', 051).
-pokemon('meowth', 052).
-pokemon('persian', 053).
-pokemon('psyduck', 054).
-pokemon('golduck', 055).
-pokemon('mankey', 056).
-pokemon('primeape', 057).
-pokemon('growlithe', 058).
-pokemon('arcanine', 059).
-pokemon('poliwag', 060).
-pokemon('poliwhirl', 061).
-pokemon('poliwrath', 062).
-pokemon('abra', 063).
-pokemon('kadabra', 064).
-pokemon('alakazam', 065).
-pokemon('machop', 066).
-pokemon('machoke', 067).
-pokemon('machamp', 068).
-pokemon('bellsprout', 069).
-pokemon('weepinbell', 070).
-pokemon('victreebel', 071).
-pokemon('tentacool', 072).
-pokemon('tentacruel', 073).
-pokemon('geodude', 074).
-pokemon('graveler', 075).
-pokemon('golem', 076).
-pokemon('ponyta', 077).
-pokemon('rapidash', 078).
-pokemon('slowpoke', 079).
-pokemon('slowbro', 080).
-pokemon('magnemite', 081).
-pokemon('magneton', 082).
-pokemon('farfetchd', 083).
-pokemon('doduo', 084).
-pokemon('dodrio', 085).
-pokemon('seel', 086).
-pokemon('dewgong', 087).
-pokemon('grimer', 088).
-pokemon('muk', 089).
-pokemon('shellder', 090).
-pokemon('cloyster', 091).
-pokemon('gastly', 092).
-pokemon('haunter', 093).
-pokemon('gengar', 094).
-pokemon('onix', 095).
-pokemon('drowzee', 096).
-pokemon('hypno', 097).
-pokemon('krabby', 098).
-pokemon('kingler', 099).
-pokemon('voltorb', 100).
-pokemon('electrode', 101).
-pokemon('exeggcute', 102).
-pokemon('exeggutor', 103).
-pokemon('cubone', 104).
-pokemon('marowak', 105).
-pokemon('hitmonlee', 106).
-pokemon('hitmonchan', 107).
-pokemon('lickitung', 108).
-pokemon('koffing', 109).
-pokemon('weezing', 110).
-pokemon('rhyhorn', 111).
-pokemon('rhydon', 112).
-pokemon('chansey', 113).
-pokemon('tangela', 114).
-pokemon('kangaskhan', 115).
-pokemon('horsea', 116).
-pokemon('seadra', 117).
-pokemon('goldeen', 118).
-pokemon('seaking', 119).
-pokemon('staryu', 120).
-pokemon('starmie', 121).
-pokemon('mr. mime', 122).
-pokemon('scyther', 123).
-pokemon('jynx', 124).
-pokemon('electabuzz', 125).
-pokemon('magmar', 126).
-pokemon('pinsir', 127).
-pokemon('tauros', 128).
-pokemon('magikarp', 129).
-pokemon('gyarados', 130).
-pokemon('lapras', 131).
-pokemon('ditto', 132).
-pokemon('eevee', 133).
-pokemon('vaporeon', 134).
-pokemon('jolteon', 135).
-pokemon('flareon', 136).
-pokemon('porygon', 137).
-pokemon('omanyte', 138).
-pokemon('omastar', 139).
-pokemon('kabuto', 140).
-pokemon('kabutops', 141).
-pokemon('aerodactyl', 142).
-pokemon('snorlax', 143).
-pokemon('articuno', 144).
-pokemon('zapdos', 145).
-pokemon('moltres', 146).
-pokemon('dratini', 147).
-pokemon('dragonair', 148).
-pokemon('dragonite', 149).
-pokemon('mewtwo', 150).
-pokemon('mew', 151).
+pokemon('bulbasaur', '001').
+pokemon('ivysaur', '002').
+pokemon('venusaur', '003').
+pokemon('charmander', '004').
+pokemon('charmeleon', '005').
+pokemon('charizard', '006').
+pokemon('squirtle', '007').
+pokemon('wartortle', '008').
+pokemon('blastoise', '009').
+pokemon('caterpie', '010').
+pokemon('metapod', '011').
+pokemon('butterfree', '012').
+pokemon('weedle', '013').
+pokemon('kakuna', '014').
+pokemon('beedrill', '015').
+pokemon('pidgey', '016').
+pokemon('pidgeotto', '017').
+pokemon('pidgeot', '018').
+pokemon('rattata', '019').
+pokemon('raticate', '020').
+pokemon('spearow', '021').
+pokemon('fearow', '022').
+pokemon('ekans', '023').
+pokemon('arbok', '024').
+pokemon('pikachu', '025').
+pokemon('raichu', '026').
+pokemon('sandshrew', '027').
+pokemon('sandslash', '028').
+pokemon('nidoran(female)', '029').
+pokemon('nidorina', '030').
+pokemon('nidoqueen', '031').
+pokemon('nidoran(male)', '032').
+pokemon('nidorino', '033').
+pokemon('nidoking', '034').
+pokemon('clefairy', '035').
+pokemon('clefable', '036').
+pokemon('vulpix', '037').
+pokemon('ninetales', '038').
+pokemon('jigglypuff', '039').
+pokemon('wigglytuff', '040').
+pokemon('zubat', '041').
+pokemon('golbat', '042').
+pokemon('oddish', '043').
+pokemon('gloom', '044').
+pokemon('vileplume', '045').
+pokemon('paras', '046').
+pokemon('parasect', '047').
+pokemon('venonat', '048').
+pokemon('venomoth', '049').
+pokemon('diglett', '050').
+pokemon('dugtrio', '051').
+pokemon('meowth', '052').
+pokemon('persian', '053').
+pokemon('psyduck', '054').
+pokemon('golduck', '055').
+pokemon('mankey', '056').
+pokemon('primeape', '057').
+pokemon('growlithe', '058').
+pokemon('arcanine', '059').
+pokemon('poliwag', '060').
+pokemon('poliwhirl', '061').
+pokemon('poliwrath', '062').
+pokemon('abra', '063').
+pokemon('kadabra', '064').
+pokemon('alakazam', '065').
+pokemon('machop', '066').
+pokemon('machoke', '067').
+pokemon('machamp', '068').
+pokemon('bellsprout', '069').
+pokemon('weepinbell', '070').
+pokemon('victreebel', '071').
+pokemon('tentacool', '072').
+pokemon('tentacruel', '073').
+pokemon('geodude', '074').
+pokemon('graveler', '075').
+pokemon('golem', '076').
+pokemon('ponyta', '077').
+pokemon('rapidash', '078').
+pokemon('slowpoke', '079').
+pokemon('slowbro', '080').
+pokemon('magnemite', '081').
+pokemon('magneton', '082').
+pokemon('farfetchd', '083').
+pokemon('doduo', '084').
+pokemon('dodrio', '085').
+pokemon('seel', '086').
+pokemon('dewgong', '087').
+pokemon('grimer', '088').
+pokemon('muk', '089').
+pokemon('shellder', '090').
+pokemon('cloyster', '091').
+pokemon('gastly', '092').
+pokemon('haunter', '093').
+pokemon('gengar', '094').
+pokemon('onix', '095').
+pokemon('drowzee', '096').
+pokemon('hypno', '097').
+pokemon('krabby', '098').
+pokemon('kingler', '099').
+pokemon('voltorb', '100').
+pokemon('electrode', '101').
+pokemon('exeggcute', '102').
+pokemon('exeggutor', '103').
+pokemon('cubone', '104').
+pokemon('marowak', '105').
+pokemon('hitmonlee', '106').
+pokemon('hitmonchan', '107').
+pokemon('lickitung', '108').
+pokemon('koffing', '109').
+pokemon('weezing', '110').
+pokemon('rhyhorn', '111').
+pokemon('rhydon', '112').
+pokemon('chansey', '113').
+pokemon('tangela', '114').
+pokemon('kangaskhan', '115').
+pokemon('horsea', '116').
+pokemon('seadra', '117').
+pokemon('goldeen', '118').
+pokemon('seaking', '119').
+pokemon('staryu', '120').
+pokemon('starmie', '121').
+pokemon('mr. mime', '122').
+pokemon('scyther', '123').
+pokemon('jynx', '124').
+pokemon('electabuzz', '125').
+pokemon('magmar', '126').
+pokemon('pinsir', '127').
+pokemon('tauros', '128').
+pokemon('magikarp', '129').
+pokemon('gyarados', '130').
+pokemon('lapras', '131').
+pokemon('ditto', '132').
+pokemon('eevee', '133').
+pokemon('vaporeon', '134').
+pokemon('jolteon', '135').
+pokemon('flareon', '136').
+pokemon('porygon', '137').
+pokemon('omanyte', '138').
+pokemon('omastar', '139').
+pokemon('kabuto', '140').
+pokemon('kabutops', '141').
+pokemon('aerodactyl', '142').
+pokemon('snorlax', '143').
+pokemon('articuno', '144').
+pokemon('zapdos', '145').
+pokemon('moltres', '146').
+pokemon('dratini', '147').
+pokemon('dragonair', '148').
+pokemon('dragonite', '149').
+pokemon('mewtwo', '150').
+pokemon('mew', '151').
 
 type('bulbasaur', 'grass').
 type('bulbasaur', 'poison').
@@ -364,309 +364,309 @@ type('dragonite', 'flying').
 type('mewtwo', 'psychic').
 type('mew', 'psychic').
 
-height('bulbasaur', 0.71).
-height('ivysaur', 0.99).
-height('venusaur', 2.01).
-height('charmander', 0.61).
-height('charmeleon', 1.09).
-height('charizard', 1.70).
-height('squirtle', 0.51).
-height('wartortle', 0.99).
-height('blastoise', 1.60).
-height('caterpie', 0.30).
-height('metapod', 0.71).
-height('butterfree', 1.09).
-height('weedle', 0.30).
-height('kakuna', 0.61).
-height('beedrill', 0.99).
-height('pidgey', 0.30).
-height('pidgeotto', 1.09).
-height('pidgeot', 1.50).
-height('rattata', 0.30).
-height('raticate', 0.71).
-height('spearow', 0.30).
-height('fearow', 1.19).
-height('ekans', 2.01).
-height('arbok', 3.51).
-height('pikachu', 0.41).
-height('raichu', 0.79).
-height('sandshrew', 0.61).
-height('sandslash', 0.99).
-height('nidoran(female)', 0.41).
-height('nidorina', 0.79).
-height('nidoqueen', 1.30).
-height('nidoran(male)', 0.51).
-height('nidorino', 0.89).
-height('nidoking', 1.40).
-height('clefairy', 0.61).
-height('clefable', 1.30).
-height('vulpix', 0.61).
-height('ninetales', 1.09).
-height('jigglypuff', 0.51).
-height('wigglytuff', 0.99).
-height('zubat', 0.79).
-height('golbat', 1.60).
-height('oddish', 0.51).
-height('gloom', 0.79).
-height('vileplume', 1.19).
-height('paras', 0.30).
-height('parasect', 0.99).
-height('venonat', 0.99).
-height('venomoth', 1.50).
-height('diglett', 0.20).
-height('dugtrio', 0.71).
-height('meowth', 0.41).
-height('persian', 0.99).
-height('psyduck', 0.79).
-height('golduck', 1.70).
-height('mankey', 0.51).
-height('primeape', 0.99).
-height('growlithe', 0.71).
-height('arcanine', 1.91).
-height('poliwag', 0.61).
-height('poliwhirl', 0.99).
-height('poliwrath', 1.30).
-height('abra', 0.89).
-height('kadabra', 1.30).
-height('alakazam', 1.50).
-height('machop', 0.79).
-height('machoke', 1.50).
-height('machamp', 1.60).
-height('bellsprout', 0.71).
-height('weepinbell', 0.99).
-height('victreebel', 1.70).
-height('tentacool', 0.89).
-height('tentacruel', 1.60).
-height('geodude', 0.41).
-height('graveler', 0.99).
-height('golem', 1.40).
-height('ponyta', 0.99).
-height('rapidash', 1.70).
-height('slowpoke', 1.19).
-height('slowbro', 1.60).
-height('magnemite', 0.30).
-height('magneton', 0.99).
-height('farfetchd', 0.79).
-height('doduo', 1.40).
-height('dodrio', 1.80).
-height('seel', 1.09).
-height('dewgong', 1.70).
-height('grimer', 0.89).
-height('muk', 1.19).
-height('shellder', 0.30).
-height('cloyster', 1.50).
-height('gastly', 1.30).
-height('haunter', 1.60).
-height('gengar', 1.50).
-height('onix', 8.79).
-height('drowzee', 0.99).
-height('hypno', 1.60).
-height('krabby', 0.41).
-height('kingler', 1.30).
-height('voltorb', 0.51).
-height('electrode', 1.19).
-height('exeggcute', 0.41).
-height('exeggutor', 2.01).
-height('cubone', 0.41).
-height('marowak', 0.99).
-height('hitmonlee', 1.50).
-height('hitmonchan', 1.40).
-height('lickitung', 1.19).
-height('koffing', 0.61).
-height('weezing', 1.19).
-height('rhyhorn', 0.99).
-height('rhydon', 1.91).
-height('chansey', 1.09).
-height('tangela', 0.99).
-height('kangaskhan', 2.21).
-height('horsea', 0.41).
-height('seadra', 1.19).
-height('goldeen', 0.61).
-height('seaking', 1.30).
-height('staryu', 0.79).
-height('starmie', 1.09).
-height('mr. mime', 1.30).
-height('scyther', 1.50).
-height('jynx', 1.40).
-height('electabuzz', 1.09).
-height('magmar', 1.30).
-height('pinsir', 1.50).
-height('tauros', 1.40).
-height('magikarp', 0.89).
-height('gyarados', 6.50).
-height('lapras', 2.49).
-height('ditto', 0.30).
-height('eevee', 0.30).
-height('vaporeon', 0.99).
-height('jolteon', 0.79).
-height('flareon', 0.89).
-height('porygon', 0.79).
-height('omanyte', 0.41).
-height('omastar', 0.99).
-height('kabuto', 0.51).
-height('kabutops', 1.30).
-height('aerodactyl', 1.80).
-height('snorlax', 2.11).
-height('articuno', 1.70).
-height('zapdos', 1.60).
-height('moltres', 2.01).
-height('dratini', 1.80).
-height('dragonair', 3.99).
-height('dragonite', 2.21).
-height('mewtwo', 2.01).
-height('mew', 0.41).
+height('bulbasaur', '0.71 m').
+height('ivysaur', '0.99 m').
+height('venusaur', '2.01 m').
+height('charmander', '0.61 m').
+height('charmeleon', '1.09 m').
+height('charizard', '1.70 m').
+height('squirtle', '0.51 m').
+height('wartortle', '0.99 m').
+height('blastoise', '1.60 m').
+height('caterpie', '0.30 m').
+height('metapod', '0.71 m').
+height('butterfree', '1.09 m').
+height('weedle', '0.30 m').
+height('kakuna', '0.61 m').
+height('beedrill', '0.99 m').
+height('pidgey', '0.30 m').
+height('pidgeotto', '1.09 m').
+height('pidgeot', '1.50 m').
+height('rattata', '0.30 m').
+height('raticate', '0.71 m').
+height('spearow', '0.30 m').
+height('fearow', '1.19 m').
+height('ekans', '2.01 m').
+height('arbok', '3.51 m').
+height('pikachu', '0.41 m').
+height('raichu', '0.79 m').
+height('sandshrew', '0.61 m').
+height('sandslash', '0.99 m').
+height('nidoran(female)', '0.41 m').
+height('nidorina', '0.79 m').
+height('nidoqueen', '1.30 m').
+height('nidoran(male)', '0.51 m').
+height('nidorino', '0.89 m').
+height('nidoking', '1.40 m').
+height('clefairy', '0.61 m').
+height('clefable', '1.30 m').
+height('vulpix', '0.61 m').
+height('ninetales', '1.09 m').
+height('jigglypuff', '0.51 m').
+height('wigglytuff', '0.99 m').
+height('zubat', '0.79 m').
+height('golbat', '1.60 m').
+height('oddish', '0.51 m').
+height('gloom', '0.79 m').
+height('vileplume', '1.19 m').
+height('paras', '0.30 m').
+height('parasect', '0.99 m').
+height('venonat', '0.99 m').
+height('venomoth', '1.50 m').
+height('diglett', '0.20 m').
+height('dugtrio', '0.71 m').
+height('meowth', '0.41 m').
+height('persian', '0.99 m').
+height('psyduck', '0.79 m').
+height('golduck', '1.70 m').
+height('mankey', '0.51 m').
+height('primeape', '0.99 m').
+height('growlithe', '0.71 m').
+height('arcanine', '1.91 m').
+height('poliwag', '0.61 m').
+height('poliwhirl', '0.99 m').
+height('poliwrath', '1.30 m').
+height('abra', '0.89 m').
+height('kadabra', '1.30 m').
+height('alakazam', '1.50 m').
+height('machop', '0.79 m').
+height('machoke', '1.50 m').
+height('machamp', '1.60 m').
+height('bellsprout', '0.71 m').
+height('weepinbell', '0.99 m').
+height('victreebel', '1.70 m').
+height('tentacool', '0.89 m').
+height('tentacruel', '1.60 m').
+height('geodude', '0.41 m').
+height('graveler', '0.99 m').
+height('golem', '1.40 m').
+height('ponyta', '0.99 m').
+height('rapidash', '1.70 m').
+height('slowpoke', '1.19 m').
+height('slowbro', '1.60 m').
+height('magnemite', '0.30 m').
+height('magneton', '0.99 m').
+height('farfetchd', '0.79 m').
+height('doduo', '1.40 m').
+height('dodrio', '1.80 m').
+height('seel', '1.09 m').
+height('dewgong', '1.70 m').
+height('grimer', '0.89 m').
+height('muk', '1.19 m').
+height('shellder', '0.30 m').
+height('cloyster', '1.50 m').
+height('gastly', '1.30 m').
+height('haunter', '1.60 m').
+height('gengar', '1.50 m').
+height('onix', '8.79 m').
+height('drowzee', '0.99 m').
+height('hypno', '1.60 m').
+height('krabby', '0.41 m').
+height('kingler', '1.30 m').
+height('voltorb', '0.51 m').
+height('electrode', '1.19 m').
+height('exeggcute', '0.41 m').
+height('exeggutor', '2.01 m').
+height('cubone', '0.41 m').
+height('marowak', '0.99 m').
+height('hitmonlee', '1.50 m').
+height('hitmonchan', '1.40 m').
+height('lickitung', '1.19 m').
+height('koffing', '0.61 m').
+height('weezing', '1.19 m').
+height('rhyhorn', '0.99 m').
+height('rhydon', '1.91 m').
+height('chansey', '1.09 m').
+height('tangela', '0.99 m').
+height('kangaskhan', '2.21 m').
+height('horsea', '0.41 m').
+height('seadra', '1.19 m').
+height('goldeen', '0.61 m').
+height('seaking', '1.30 m').
+height('staryu', '0.79 m').
+height('starmie', '1.09 m').
+height('mr. mime', '1.30 m').
+height('scyther', '1.50 m').
+height('jynx', '1.40 m').
+height('electabuzz', '1.09 m').
+height('magmar', '1.30 m').
+height('pinsir', '1.50 m').
+height('tauros', '1.40 m').
+height('magikarp', '0.89 m').
+height('gyarados', '6.50 m').
+height('lapras', '2.49 m').
+height('ditto', '0.30 m').
+height('eevee', '0.30 m').
+height('vaporeon', '0.99 m').
+height('jolteon', '0.79 m').
+height('flareon', '0.89 m').
+height('porygon', '0.79 m').
+height('omanyte', '0.41 m').
+height('omastar', '0.99 m').
+height('kabuto', '0.51 m').
+height('kabutops', '1.30 m').
+height('aerodactyl', '1.80 m').
+height('snorlax', '2.11 m').
+height('articuno', '1.70 m').
+height('zapdos', '1.60 m').
+height('moltres', '2.01 m').
+height('dratini', '1.80 m').
+height('dragonair', '3.99 m').
+height('dragonite', '2.21 m').
+height('mewtwo', '2.01 m').
+height('mew', '0.41 m').
 
-weight('bulbasaur', 6.9).
-weight('ivysaur', 13.0).
-weight('venusaur', 100.0).
-weight('charmander', 8.5).
-weight('charmeleon', 19.0).
-weight('charizard', 90.5).
-weight('squirtle', 9.0).
-weight('wartortle', 22.5).
-weight('blastoise', 85.5).
-weight('caterpie', 2.9).
-weight('metapod', 9.9).
-weight('butterfree', 32.0).
-weight('weedle', 3.2).
-weight('kakuna', 10.0).
-weight('beedrill', 29.5).
-weight('pidgey', 1.8).
-weight('pidgeotto', 30.0).
-weight('pidgeot', 39.5).
-weight('rattata', 3.5).
-weight('raticate', 18.5).
-weight('spearow', 2.0).
-weight('fearow', 38.0).
-weight('ekans', 6.9).
-weight('arbok', 65.0).
-weight('pikachu', 6.0).
-weight('raichu', 30.0).
-weight('sandshrew', 12.0).
-weight('sandslash', 29.5).
-weight('nidoran(female)', 7.0).
-weight('nidorina', 20.0).
-weight('nidoqueen', 60.0).
-weight('nidoran(male)', 9.0).
-weight('nidorino', 19.5).
-weight('nidoking', 62.0).
-weight('clefairy', 7.5).
-weight('clefable', 40.0).
-weight('vulpix', 9.9).
-weight('ninetales', 19.9).
-weight('jigglypuff', 5.5).
-weight('wigglytuff', 12.0).
-weight('zubat', 7.5).
-weight('golbat', 55.0).
-weight('oddish', 5.4).
-weight('gloom', 8.6).
-weight('vileplume', 18.6).
-weight('paras', 5.4).
-weight('parasect', 29.5).
-weight('venonat', 30.0).
-weight('venomoth', 12.5).
-weight('diglett', 0.8).
-weight('dugtrio', 33.3).
-weight('meowth', 4.2).
-weight('persian', 32.0).
-weight('psyduck', 19.6).
-weight('golduck', 76.6).
-weight('mankey', 28.0).
-weight('primeape', 32.0).
-weight('growlithe', 19.0).
-weight('arcanine', 155.0).
-weight('poliwag', 12.4).
-weight('poliwhirl', 20.0).
-weight('poliwrath', 54.0).
-weight('abra', 19.5).
-weight('kadabra', 56.5).
-weight('alakazam', 48.0).
-weight('machop', 19.5).
-weight('machoke', 70.5).
-weight('machamp', 130.0).
-weight('bellsprout', 4.0).
-weight('weepinbell', 6.4).
-weight('victreebel', 15.5).
-weight('tentacool', 45.5).
-weight('tentacruel', 55.0).
-weight('geodude', 20.0).
-weight('graveler', 105.0).
-weight('golem', 300.0).
-weight('ponyta', 30.0).
-weight('rapidash', 95.0).
-weight('slowpoke', 36.0).
-weight('slowbro', 78.5).
-weight('magnemite', 6.0).
-weight('magneton', 60.0).
-weight('farfetchd', 15.0).
-weight('doduo', 39.2).
-weight('dodrio', 85.2).
-weight('seel', 90.0).
-weight('dewgong', 120.0).
-weight('grimer', 30.0).
-weight('muk', 30.0).
-weight('shellder', 4.0).
-weight('cloyster', 132.5).
-weight('gastly', 0.1).
-weight('haunter', 0.1).
-weight('gengar', 40.5).
-weight('onix', 210.0).
-weight('drowzee', 32.4).
-weight('hypno', 75.6).
-weight('krabby', 6.5).
-weight('kingler', 60.0).
-weight('voltorb', 10.4).
-weight('electrode', 66.6).
-weight('exeggcute', 2.5).
-weight('exeggutor', 120.0).
-weight('cubone', 6.5).
-weight('marowak', 45.0).
-weight('hitmonlee', 49.8).
-weight('hitmonchan', 50.2).
-weight('lickitung', 65.5).
-weight('koffing', 1.0).
-weight('weezing', 9.5).
-weight('rhyhorn', 115.0).
-weight('rhydon', 120.0).
-weight('chansey', 34.6).
-weight('tangela', 35.0).
-weight('kangaskhan', 80.0).
-weight('horsea', 8.0).
-weight('seadra', 25.0).
-weight('goldeen', 15.0).
-weight('seaking', 39.0).
-weight('staryu', 34.5).
-weight('starmie', 80.0).
-weight('mr. mime', 54.5).
-weight('scyther', 56.0).
-weight('jynx', 40.6).
-weight('electabuzz', 30.0).
-weight('magmar', 44.5).
-weight('pinsir', 55.0).
-weight('tauros', 88.4).
-weight('magikarp', 10.0).
-weight('gyarados', 235.0).
-weight('lapras', 220.0).
-weight('ditto', 4.0).
-weight('eevee', 6.5).
-weight('vaporeon', 29.0).
-weight('jolteon', 24.5).
-weight('flareon', 25.0).
-weight('porygon', 36.5).
-weight('omanyte', 7.5).
-weight('omastar', 35.0).
-weight('kabuto', 11.5).
-weight('kabutops', 40.5).
-weight('aerodactyl', 59.0).
-weight('snorlax', 460.0).
-weight('articuno', 55.4).
-weight('zapdos', 52.6).
-weight('moltres', 60.0).
-weight('dratini', 3.3).
-weight('dragonair', 16.5).
-weight('dragonite', 210.0).
-weight('mewtwo', 122.0).
-weight('mew', 4.0).
+weight('bulbasaur', '6.9 kg').
+weight('ivysaur', '13.0 kg').
+weight('venusaur', '100.0 kg').
+weight('charmander', '8.5 kg').
+weight('charmeleon', '19.0 kg').
+weight('charizard', '90.5 kg').
+weight('squirtle', '9.0 kg').
+weight('wartortle', '22.5 kg').
+weight('blastoise', '85.5 kg').
+weight('caterpie', '2.9 kg').
+weight('metapod', '9.9 kg').
+weight('butterfree', '32.0 kg').
+weight('weedle', '3.2 kg').
+weight('kakuna', '10.0 kg').
+weight('beedrill', '29.5 kg').
+weight('pidgey', '1.8 kg').
+weight('pidgeotto', '30.0 kg').
+weight('pidgeot', '39.5 kg').
+weight('rattata', '3.5 kg').
+weight('raticate', '18.5 kg').
+weight('spearow', '2.0 kg').
+weight('fearow', '38.0 kg').
+weight('ekans', '6.9 kg').
+weight('arbok', '65.0 kg').
+weight('pikachu', '6.0 kg').
+weight('raichu', '30.0 kg').
+weight('sandshrew', '12.0 kg').
+weight('sandslash', '29.5 kg').
+weight('nidoran(female)', '7.0 kg').
+weight('nidorina', '20.0 kg').
+weight('nidoqueen', '60.0 kg').
+weight('nidoran(male)', '9.0 kg').
+weight('nidorino', '19.5 kg').
+weight('nidoking', '62.0 kg').
+weight('clefairy', '7.5 kg').
+weight('clefable', '40.0 kg').
+weight('vulpix', '9.9 kg').
+weight('ninetales', '19.9 kg').
+weight('jigglypuff', '5.5 kg').
+weight('wigglytuff', '12.0 kg').
+weight('zubat', '7.5 kg').
+weight('golbat', '55.0 kg').
+weight('oddish', '5.4 kg').
+weight('gloom', '8.6 kg').
+weight('vileplume', '18.6 kg').
+weight('paras', '5.4 kg').
+weight('parasect', '29.5 kg').
+weight('venonat', '30.0 kg').
+weight('venomoth', '12.5 kg').
+weight('diglett', '0.8 kg').
+weight('dugtrio', '33.3 kg').
+weight('meowth', '4.2 kg').
+weight('persian', '32.0 kg').
+weight('psyduck', '19.6 kg').
+weight('golduck', '76.6 kg').
+weight('mankey', '28.0 kg').
+weight('primeape', '32.0 kg').
+weight('growlithe', '19.0 kg').
+weight('arcanine', '155.0 kg').
+weight('poliwag', '12.4 kg').
+weight('poliwhirl', '20.0 kg').
+weight('poliwrath', '54.0 kg').
+weight('abra', '19.5 kg').
+weight('kadabra', '56.5 kg').
+weight('alakazam', '48.0 kg').
+weight('machop', '19.5 kg').
+weight('machoke', '70.5 kg').
+weight('machamp', '130.0 kg').
+weight('bellsprout', '4.0 kg').
+weight('weepinbell', '6.4 kg').
+weight('victreebel', '15.5 kg').
+weight('tentacool', '45.5 kg').
+weight('tentacruel', '55.0 kg').
+weight('geodude', '20.0 kg').
+weight('graveler', '105.0 kg').
+weight('golem', '300.0 kg').
+weight('ponyta', '30.0 kg').
+weight('rapidash', '95.0 kg').
+weight('slowpoke', '36.0 kg').
+weight('slowbro', '78.5 kg').
+weight('magnemite', '6.0 kg').
+weight('magneton', '60.0 kg').
+weight('farfetchd', '15.0 kg').
+weight('doduo', '39.2 kg').
+weight('dodrio', '85.2 kg').
+weight('seel', '90.0 kg').
+weight('dewgong', '120.0 kg').
+weight('grimer', '30.0 kg').
+weight('muk', '30.0 kg').
+weight('shellder', '4.0 kg').
+weight('cloyster', '132.5 kg').
+weight('gastly', '0.1 kg').
+weight('haunter', '0.1 kg').
+weight('gengar', '40.5 kg').
+weight('onix', '210.0 kg').
+weight('drowzee', '32.4 kg').
+weight('hypno', '75.6 kg').
+weight('krabby', '6.5 kg').
+weight('kingler', '60.0 kg').
+weight('voltorb', '10.4 kg').
+weight('electrode', '66.6 kg').
+weight('exeggcute', '2.5 kg').
+weight('exeggutor', '120.0 kg').
+weight('cubone', '6.5 kg').
+weight('marowak', '45.0 kg').
+weight('hitmonlee', '49.8 kg').
+weight('hitmonchan', '50.2 kg').
+weight('lickitung', '65.5 kg').
+weight('koffing', '1.0 kg').
+weight('weezing', '9.5 kg').
+weight('rhyhorn', '115.0 kg').
+weight('rhydon', '120.0 kg').
+weight('chansey', '34.6 kg').
+weight('tangela', '35.0 kg').
+weight('kangaskhan', '80.0 kg').
+weight('horsea', '8.0 kg').
+weight('seadra', '25.0 kg').
+weight('goldeen', '15.0 kg').
+weight('seaking', '39.0 kg').
+weight('staryu', '34.5 kg').
+weight('starmie', '80.0 kg').
+weight('mr. mime', '54.5 kg').
+weight('scyther', '56.0 kg').
+weight('jynx', '40.6 kg').
+weight('electabuzz', '30.0 kg').
+weight('magmar', '44.5 kg').
+weight('pinsir', '55.0 kg').
+weight('tauros', '88.4 kg').
+weight('magikarp', '10.0 kg').
+weight('gyarados', '235.0 kg').
+weight('lapras', '220.0 kg').
+weight('ditto', '4.0 kg').
+weight('eevee', '6.5 kg').
+weight('vaporeon', '29.0 kg').
+weight('jolteon', '24.5 kg').
+weight('flareon', '25.0 kg').
+weight('porygon', '36.5 kg').
+weight('omanyte', '7.5 kg').
+weight('omastar', '35.0 kg').
+weight('kabuto', '11.5 kg').
+weight('kabutops', '40.5 kg').
+weight('aerodactyl', '59.0 kg').
+weight('snorlax', '460.0 kg').
+weight('articuno', '55.4 kg').
+weight('zapdos', '52.6 kg').
+weight('moltres', '60.0 kg').
+weight('dratini', '3.3 kg').
+weight('dragonair', '16.5 kg').
+weight('dragonite', '210.0 kg').
+weight('mewtwo', '122.0 kg').
+weight('mew', '4.0 kg').
 
 next_evolution('bulbasaur', 'ivysaur').
 next_evolution('bulbasaur', 'venusaur').
