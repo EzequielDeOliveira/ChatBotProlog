@@ -1,16 +1,15 @@
 :-[pokelist].
+pokelog :-
+    write('? '), read_word_list(Input), pokelog(Input), !.
 
-eliza :-
-    write('? '), read_word_list(Input), eliza(Input), !.
-
-eliza([bye]) :-
+pokelog([bye]) :-
     write('Goodbye. I hope I have helped you'), nl.
-eliza(Input) :-
+pokelog(Input) :-
     pattern(Stimulus, Response),
     match(Stimulus, Dictionary, Input),
     match(Response, Dictionary, Output),
     reply(Output),
-    !, eliza.
+    !, pokelog.
 
 match([N|Pattern], Dictionary, Target) :-
     integer(N), lookup(N, Dictionary, LeftTarget),
@@ -22,8 +21,56 @@ match([], _Dictionary, []).
 
 
 %% Padrões Pokemon - Geral
+% Caso geral
 pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n', 'previous evolution: ', P]) 
 :- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), next_evolution(X, E), prev_evolution(X, P).
+
+pattern([X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), next_evolution(X, E), prev_evolution(X, P).
+
+pattern([who, is, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), next_evolution(X, E), prev_evolution(X, P).
+
+% Sem desevolução
+pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n']) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), length(Bag, 1).
+
+pattern([X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n']) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), length(Bag, 1).
+
+pattern([who, is, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E , '\n']) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), length(Bag, 1).
+
+% Sem evolução 
+pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), length(Bag, 1).
+
+pattern([X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), length(Bag, 1).
+
+pattern([who, is, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), length(Bag, 1).
+
+% Com 2 desevoluções
+pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+pattern([X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+pattern([who, is, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(P, prev_evolution(X, P), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+% Com 2 evoluções
+pattern([tell, me, about, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+pattern([X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+pattern([who, is, X], [X,'-', N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) 
+:- pokemon(X, N), type(X, Y), height(X, H), weight(X, W), bagof(E, next_evolution(X, E), Bag), nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
 
 %pattern([1,you,2,me],[what,makes,you,think,i,2,you,'?']).
 
@@ -49,7 +96,43 @@ pattern([what,1,X,evolutions],[X,evolution,is,Elem,and,Elem2]) :- bagof(Y,next_e
 
 %Padrões de desevolução do pokemon
 pattern([what,1,X,previous,evolution],[X,previous,evolution,is,Elem]) :- bagof(Y,prev_evolution(X,Y),Bag),length(Bag, 1),nth0(0,Bag,Elem).
-pattern([what,1,X,previous,evolutions],[X,previous,evolution,is,Elem,and,Elem2]) :- bagof(Y,prev_evolution(X,Y),Bag),length(Bag, 2),nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+pattern([what,1,X,previous,evolutions],[X,previous,evolution,is,Elem,and,Elem2]) :- 
+    bagof(Y,prev_evolution(X,Y),Bag),length(Bag, 2),nth0(0,Bag,Elem),nth0(1,Bag,Elem2).
+
+
+%Padrões de comparação de peso de 2 pokemons 
+pattern([is,X,heavier,than,Y],[yes,X,is,heavier,than,Y]) :- 
+    weight(X,PX), weight(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT > PYINT.
+
+pattern([is,X,heavier,than,Y],[no,X,is,lighter,than,Y]) :- 
+    weight(X,PX), weight(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT < PYINT.
+
+pattern([is,X,heavier,than,Y],[X,'weight is equal to',Y]) :- 
+    weight(X,PX), weight(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT = PYINT.
+
+%Padrões de comparação de altura de 2 pokemons 
+pattern([is,X,higher,than,Y],[yes,X,is,higher,than,Y]) :- 
+    height(X,PX), height(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT > PYINT.
+
+pattern([is,X,higher,than,Y],[no,X,is,lower,than,Y]) :- 
+    height(X,PX), height(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT < PYINT.
+
+pattern([is,X,higher,than,Y],[X,'height is equal to',Y,height]) :- 
+    height(X,PX), height(Y,PY), 
+    atom_number(PX,PXINT), atom_number(PY,PYINT),
+    PXINT = PYINT.
+
+
 
 pattern([1],[please,go,on]).
 
