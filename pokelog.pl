@@ -1,4 +1,5 @@
 :-[pokelist].
+:-[pokerules].
 pokelog :-
     write('? '), read_word_list(Input), pokelog(Input), !.
 
@@ -131,6 +132,19 @@ pattern([is,X,higher,than,Y],[X,'height is equal to',Y,height]) :-
     height(X,PX), height(Y,PY), 
     atom_number(PX,PXINT), atom_number(PY,PYINT),
     PXINT = PYINT.
+
+%Padrões de vantagem de pokemon
+pattern([1,2,X,has,advantage,over,T],[yes, X,'has advantage over',T]) :- advantage(X,T).
+
+pattern([1,2,X,has,advantage,over,T],[no, X,'has disadvantage over',T]) :- disadvantage(X,T).
+
+
+%Padrões de vantagem entre tipos
+pattern([1,type,X,has,advantage,over,Y],[yes, X,'has advantage over',Y]) :- strong(X,Y).
+
+pattern([1,type,X,has,advantage,over,Y],[no, X,'has disadvantage over',Y]) :- weak(X,Y).
+
+
 
 
 
