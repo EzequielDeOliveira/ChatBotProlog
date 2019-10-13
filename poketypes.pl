@@ -1,22 +1,3 @@
-type(normal).
-type(fire).
-type(water).
-type(electric).
-type(grass).
-type(ice).
-type(fighting).
-type(poison).
-type(ground).
-type(flying).
-type(psychic).
-type(bug).
-type(rock).
-type(ghost).
-type(dragon).
-type(dark).
-type(steel).
-type(fairy).
-
 immune(ghost, normal).
 immune(ground, electric).
 immune(ghost, fighting).
