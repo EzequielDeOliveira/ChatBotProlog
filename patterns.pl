@@ -89,7 +89,7 @@ pattern([is,X,higher,than,Y],[no,X,is,lower,than,Y]) :- isPokemonNotHigher(X,Y).
 
 pattern([is,X,higher,than,Y],[X,'height is equal to',Y,height]) :- isPokemonHeightEqual(X,Y).
 
-%Padrões de vantagem de pokemon
+%Padrões de vantagem de pokemon com um tipo
 pattern([1,2,X,has,advantage,over,T],[yes, X,'has advantage over',T]) :- advantage(X,T).
 
 pattern([1,2,X,has,advantage,over,T],[no, X,'has disadvantage over',T]) :- disadvantage(X,T).
@@ -100,4 +100,38 @@ pattern([1,type,X,has,advantage,over,Y],[yes, X,'has advantage over',Y]) :- stro
 
 pattern([1,type,X,has,advantage,over,Y],[no, X,'has disadvantage over',Y]) :- weak(X,Y).
 
+
+%Padrões de listagem de fraquezas de um pokemon
+pattern([what,are,X,weaknesses],FinalBag) :- getPokemonMultipleWeakness(X,FinalBag).
+
+pattern([what,are,X,weaknesses],[X,weakness,are,Elem1,and,Elem2]) :- getPokemonWeakness(X,Elem1,Elem2).
+
+pattern([what,are,X,weaknesses],[X,weakness,are,Elem1,',',Elem2,and,Elem3]) :- getPokemonWeakness(X,Elem1,Elem2,Elem3).
+
+pattern([what,are,X,weaknesses],[X,weakness,are,Elem1,',',Elem2,',',Elem3,and,Elem4]) :- getPokemonWeakness(X,Elem1,Elem2,Elem3,Elem4).
+
+pattern([what,are,X,weaknesses],[X,weakness,are,Elem1,',',Elem2,',',Elem3,',',Elem4,and,Elem5]) :- getPokemonWeakness(X,Elem1,Elem2,Elem3,Elem4,Elem5).
+
+%Padrões de listagem de vantagens de um pokemon
+pattern([what,is,X,strong,against],FinalBag) :- getPokemonMultipleStrongness(X,FinalBag).
+
+pattern([what,is,X,strong,against],[X,'is strong against',Elem1,and,Elem2]) :- getPokemonStrongness(X,Elem1,Elem2).
+
+pattern([what,is,X,strong,against],[X,'is strong against',Elem1,',',Elem2,and,Elem3]) :- getPokemonStrongness(X,Elem1,Elem2,Elem3).
+
+pattern([what,is,X,strong,against],[X,'is strong against',Elem1,',',Elem2,',',Elem3,and,Elem4]) :- getPokemonStrongness(X,Elem1,Elem2,Elem3,Elem4).
+
+pattern([what,is,X,strong,against],[X,'is strong against',Elem1,',',Elem2,',',Elem3,',',Elem4,and,Elem5]) :- getPokemonStrongness(X,Elem1,Elem2,Elem3,Elem4,Elem5).
+
+%Padroes de listagem de imunidades de um pokemon
+pattern([what,is,X,imunne,against],FinalBag) :- getPokemonMultipleImunnities(X,FinalBag).
+
+pattern([what,is,X,imunne,against],[X,'is imunne against',Elem1]) :- getPokemonImunities(X,Elem1).
+
+pattern([what,is,X,imunne,against],[X,'is imunne against',Elem1,and,Elem2]) :- getPokemonImunities(X,Elem1,Elem2).
+
+
+
 pattern([1],['I dont think I understood that, you can ask me about pokemons names,types,advantages,evolution,height,weight...']).
+
+
