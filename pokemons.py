@@ -48,7 +48,15 @@ for pokemon in pokemons:
     
 
     imagelist.append(f'image(\'{nameFormat(pokemon["name"])}\', \'{pokemon["img"]}\').')
-    
+
+print(":- dynamic pokemon/2.",file=f)
+print(":- dynamic type/2.",file=f)
+print(":- dynamic height/2.",file=f)
+print(":- dynamic weight/2.",file=f)
+print(":- dynamic next_evolution/2.",file=f)
+print(":- dynamic prev_evolution/2.",file=f)
+print(":- dynamic image/2.",file=f)
+print(file=f)
 
 for poke in pokelist:
     print(poke,file=f)

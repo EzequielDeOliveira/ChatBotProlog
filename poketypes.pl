@@ -1,3 +1,8 @@
+:- dynamic immune/2.
+:- dynamic weak/2.
+:- dynamic strong/2.
+
+
 immune(ghost, normal).
 immune(ground, electric).
 immune(ghost, fighting).

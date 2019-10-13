@@ -1,3 +1,11 @@
+:- dynamic pokemon/2.
+:- dynamic type/2.
+:- dynamic height/2.
+:- dynamic weight/2.
+:- dynamic next_evolution/2.
+:- dynamic prev_evolution/2.
+:- dynamic image/2.
+
 pokemon('bulbasaur', '001').
 pokemon('ivysaur', '002').
 pokemon('venusaur', '003').
