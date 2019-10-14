@@ -2,7 +2,7 @@
 :- [pokerules].
 %% Padrões Pokemon - Geral
 % Caso geral
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, m, '\n', weight, W, kg, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -10,7 +10,7 @@ pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: 
     next_evolution(X, E),
     prev_evolution(X, P).
 
-pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
+pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -18,7 +18,7 @@ pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weigh
     next_evolution(X, E),
     prev_evolution(X, P).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'evolution :', E, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -27,7 +27,7 @@ pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\
     prev_evolution(X, P).
 
 % Sem desevolução
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', Elem, '\n']) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'evolution :', Elem, '\n']) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -36,7 +36,7 @@ pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: 
     length(Bag, 1),
     nth0(0, Bag, Elem).
 
-pattern([X], ['\n', '\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', Elem, '\n']) :-
+pattern([X], ['\n', '\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'evolution :', Elem, '\n']) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -45,7 +45,7 @@ pattern([X], ['\n', '\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n',
     length(Bag, 1),
     nth0(0, Bag, Elem).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'evolution :', Elem, '\n']) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'evolution :', Elem, '\n']) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -55,7 +55,7 @@ pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\
     nth0(0, Bag, Elem).
 
 % Sem evolução 
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -63,7 +63,7 @@ pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: 
     bagof(P, prev_evolution(X, P), Bag),
     length(Bag, 1).
 
-pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) :-
+pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -71,7 +71,7 @@ pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weigh
     bagof(P, prev_evolution(X, P), Bag),
     length(Bag, 1).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolution: ', P]) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolution: ', P]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -80,7 +80,7 @@ pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\
     length(Bag, 1).
 
 % Com 2 desevoluções
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -89,7 +89,7 @@ pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: 
     nth0(0, Bag, Elem),
     nth0(1, Bag, Elem2).
 
-pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
+pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -98,7 +98,7 @@ pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weigh
     nth0(0, Bag, Elem),
     nth0(1, Bag, Elem2).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'previous evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -108,7 +108,7 @@ pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\
     nth0(1, Bag, Elem2).
 
 % Com 2 evoluções
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -117,7 +117,7 @@ pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: 
     nth0(0, Bag, Elem),
     nth0(1, Bag, Elem2).
 
-pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
+pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -126,7 +126,7 @@ pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weigh
     nth0(0, Bag, Elem),
     nth0(1, Bag, Elem2).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W, kg, '\n', 'Evolutions: ', Elem, and, Elem2]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -136,19 +136,19 @@ pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\
     nth0(1, Bag, Elem2).
 
 % Sem evolução e nem pre evolução
-pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W]) :-
+pattern([tell, me, about, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
     weight(X, W).
 
-pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W]) :-
+pattern([X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
     weight(X, W).
 
-pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, '\n', weight, W]) :-
+pattern([who, is, X], ['\n', X, -, N, '\n', 'type: ', Y, '\n', 'height: ', H, m, '\n', weight, W]) :-
     pokemon(X, N),
     type(X, Y),
     height(X, H),
@@ -174,7 +174,7 @@ pattern([what, 1, X, height, 2], ['\n', X, height, is, Y]) :-
 %% Padrões de peso do pokemon
 pattern([what, 1, X, weight, 2], ['\n', X, weight, is, Y]) :-
     weight(X, Y).
-pattern([how, much, 1, X, weights, 2], ['\n', X, weight, is, Y]) :-
+pattern([how, mucH, m, 1, X, weights, 2], ['\n', X, weight, is, Y]) :-
     weight(X, Y).
 
 %%Padrões de evolução do pokemon
