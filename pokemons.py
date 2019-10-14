@@ -1,9 +1,9 @@
-from pokedata import data
-
+import json
 def nameFormat(name):
     return name.replace('\'','').replace(' ♀ ','').replace(' ♂ ','').lower()
 
-pokemons = data["pokemon"]
+with open('pokedata.json', 'r') as json_file:
+    pokemons = json.load(json_file)
 f = open('pokelist.pl','w')
 
 
@@ -15,7 +15,7 @@ nextEvolutionList = []
 prevEvolutionList = []
 imagelist = []
 
-for pokemon in pokemons:
+for pokemon in pokemons['pokemon']:
     pokelist.append(f'pokemon(\'{nameFormat(pokemon["name"])}\', \'{pokemon["num"]}\').')
     
     for poke_type in pokemon["type"]:
