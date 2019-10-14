@@ -1,3 +1,11 @@
+
+# Projeto: Pokelog
+
+**Ezequiel de Oliveira dos Reis - 160119316**  
+**Felipe Campos de Almeida - 160119553**  
+**Gabriel de Jesus Carvalho - 16/0120918**  
+**Guilherme de Oliveira Aguiar - 160123119** 
+
 # O que é?
 Pokelog é um chatbot que responde perguntas sobre pokemon, o tema das perguntas são o nome, número, tipo, peso, altura, proxima evolução, evolução anterior, vantagens do pokemon, desvantagens e imunidades. O programa busca simular uma conversa. O usuário escreve uma sentença e o bot dá uma resposta apropriada. O pokelog reconhece padrões entre as palavras e responde de acordo com a padrão de resposta correspondente.
 
