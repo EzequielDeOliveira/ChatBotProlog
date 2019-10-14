@@ -174,7 +174,7 @@ pattern([what, 1, X, height, 2], ['\n', X, height, is, Y]) :-
 %% Padrões de peso do pokemon
 pattern([what, 1, X, weight, 2], ['\n', X, weight, is, Y]) :-
     weight(X, Y).
-pattern([how, mucH, m, 1, X, weights, 2], ['\n', X, weight, is, Y]) :-
+pattern([how, much, m, 1, X, weights, 2], ['\n', X, weight, is, Y]) :-
     weight(X, Y).
 
 %%Padrões de evolução do pokemon
