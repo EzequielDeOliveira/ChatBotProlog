@@ -1,9 +1,10 @@
 import React from 'react';
+import ChatComponent from '../ChatComponent';
 
 function App() {
   return (
     <div>
-      olá
+      <ChatComponent />
     </div>
   );
 }
